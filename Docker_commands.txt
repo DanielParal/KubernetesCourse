@@ -1,0 +1,5 @@
+Build image:
+docker build . -t danielparal/apiweather -f Api.Weather/Dockerfile
+
+Push image:
+docker push danielparal/apiweather:latest

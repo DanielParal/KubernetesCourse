@@ -1,0 +1,8 @@
+kubectl run [podname] --image=nginx:alpine
+kubectl get pods
+kubectl get all
+kubectl port-forward [name-of-pod] 8080:80
+kubectl delete pod [name-of-pod]
+
+kubectl apply -f file.pod.yml
+kubectl create –f file.pod.yml --save-config
