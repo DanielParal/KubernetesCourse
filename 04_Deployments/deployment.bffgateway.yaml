@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bffgateway-deployment
+  labels:
+    app: my-bffgateway
+spec:
+  replicas: 1
+  minReadySeconds: 10
+  selector:
+    matchLabels:
+      app: my-bffgateway
+  template:
+    metadata:
+      labels:
+       app: my-bffgateway
+    spec:
+      containers:
+        - name: my-bffgateway
+          image: danielparal/bffgateway:1.1
+          env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: "Test"
+          ports:
+          - containerPort: 80
