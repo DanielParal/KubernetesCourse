@@ -1,0 +1,9 @@
+kubectl apply -f 04_Deployments/deployment.bffgateway.yaml
+kubectl apply -f 05_Services/service.bffgateway.yaml
+kubectl apply -f 04_Deployments/deployment.myapiweather.yaml
+kubectl apply -f 05_Services/service.apiweather.communication.yaml
+ 
+kubectl delete -f 04_Deployments/deployment.bffgateway.yaml
+kubectl delete -f 05_Services/service.bffgateway.yaml 
+kubectl delete -f 04_Deployments/deployment.myapiweather.yaml
+kubectl delete -f 05_Services/service.apiweather.communication.yaml

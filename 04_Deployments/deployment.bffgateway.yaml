@@ -5,7 +5,7 @@ metadata:
   labels:
     app: my-bffgateway
 spec:
-  replicas: 1
+  replicas: 2
   minReadySeconds: 10
   selector:
     matchLabels:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: my-bffgateway
-          image: danielparal/bffgateway:1.1
+          image: danielparal/bffgateway:2.1
           env:
           - name: ASPNETCORE_ENVIRONMENT
             value: "Test"
