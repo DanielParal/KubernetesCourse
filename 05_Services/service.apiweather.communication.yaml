@@ -7,5 +7,4 @@ spec:
     app: my-api-weather
   ports:
     - protocol: TCP
-      targetPort: 80
       port: 80

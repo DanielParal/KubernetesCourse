@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: my-bffgateway
-          image: danielparal/bffgateway:2.1
+          image: danielparal/bffgateway:2.3
           env:
           - name: ASPNETCORE_ENVIRONMENT
             value: "Test"
